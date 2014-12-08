@@ -8,9 +8,7 @@ namespace GS.Web
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseNancy(options => 
-                options.Bootstrapper = new Bootstrapper());
-        
+            app.UseNancy();
             app.UseStageMarker(PipelineStage.MapHandler);
         }
     }
