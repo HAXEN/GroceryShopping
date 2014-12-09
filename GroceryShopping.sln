@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Web", "GS.Web\GS.Web.csproj", "{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Domain", "GS.Domain\GS.Domain.csproj", "{B90DD7BB-3140-4562-A80B-AD3FB4EE52F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7DA5617-138D-4BA4-8F7D-4A57354F2D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Features.Tests", "Tests\GS.Features.Tests\GS.Features.Tests.csproj", "{4CB4855E-AD30-4377-A421-47811FD98935}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +19,19 @@ Global
 		{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90DD7BB-3140-4562-A80B-AD3FB4EE52F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90DD7BB-3140-4562-A80B-AD3FB4EE52F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90DD7BB-3140-4562-A80B-AD3FB4EE52F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90DD7BB-3140-4562-A80B-AD3FB4EE52F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB4855E-AD30-4377-A421-47811FD98935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB4855E-AD30-4377-A421-47811FD98935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB4855E-AD30-4377-A421-47811FD98935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB4855E-AD30-4377-A421-47811FD98935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CB4855E-AD30-4377-A421-47811FD98935} = {E7DA5617-138D-4BA4-8F7D-4A57354F2D00}
 	EndGlobalSection
 EndGlobal
