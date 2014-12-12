@@ -2,8 +2,6 @@
 
 using GS.Web.Features.Authentication.Domain;
 
-using Nancy.SimpleAuthentication;
-
 using SimpleAuthentication.Core;
 
 using Xunit;
@@ -12,7 +10,7 @@ namespace GS.Features.Tests.Authentication
 {
     public class AuthorizedUserTests
     {
-        private AuthenticatedUser _authenticatedUser;
+        private readonly AuthenticatedUser _authenticatedUser;
 
         public AuthorizedUserTests()
         {
@@ -40,7 +38,7 @@ namespace GS.Features.Tests.Authentication
         [Fact]
         public void Should_have_Email()
         {
-            Assert.Equal("test.usermail.com", _authenticatedUser.PrimaryEmail());
+            Assert.Equal("test.user@mail.com", _authenticatedUser.PrimaryEmail().Value);
         }
 
         [Fact]

@@ -2,13 +2,15 @@
 
 namespace GS.Domain
 {
-    public abstract class AggregateRoot<T> : AggregateRoot
+    public abstract class GuidAggregateRoot<ObjectT> : AggregateRoot<ObjectT,Guid>
+        where ObjectT : class 
     {
-        public T Id { get; protected set; }
     }
 
-    public abstract class AggregateRoot
+    public abstract class AggregateRoot<ObjectT,T> : ValidatableObject<ObjectT>
+        where ObjectT : class 
     {
+        public T Id { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
     }
 }
